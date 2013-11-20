@@ -171,8 +171,7 @@ Discourse.TopicView = Discourse.View.extend(Discourse.Scrolling, {
   }.observes("Discourse.hasFocus"),
 
   getPost: function($post){
-    var post, postView;
-    postView = Ember.View.views[$post.prop('id')];
+    var postView = Ember.View.views[$post.prop('id')];
     if (postView) {
       return postView.get('post');
     }
@@ -244,11 +243,11 @@ Discourse.TopicView = Discourse.View.extend(Discourse.Scrolling, {
         var $body = $('body'),
             $elem = $(rows[0]),
             distToElement = $body.scrollTop() - $elem.position().top;
-        this.get('postStream').prependMore().then(function() {
-          Em.run.next(function () {
-            $('html, body').scrollTop($elem.position().top + distToElement);
-          });
-        });
+        // this.get('postStream').prependMore().then(function() {
+        //   Em.run.next(function () {
+        //     $('html, body').scrollTop($elem.position().top + distToElement);
+        //   });
+        // });
       }
     }
 
@@ -257,7 +256,7 @@ Discourse.TopicView = Discourse.View.extend(Discourse.Scrolling, {
     var currentPost;
     if(info.bottom === rows.length-1) {
       currentPost = this.postSeen($(rows[info.bottom]));
-      this.get('postStream').appendMore();
+      //this.get('postStream').appendMore();
     }
 
 
