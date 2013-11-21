@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.1.0'
 gem 'rubysl', platform: :rbx
 gem 'racc', platform: :rbx
 
