@@ -197,4 +197,4 @@ group :profile do
 end
 
 gem 'rails_12factor', group: :production
-gem 'autoscaler', group: :production
+#gem 'autoscaler', group: :production
