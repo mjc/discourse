@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.1.0', engine: 'rbx', engine_version: '2.2.1'
 gem 'rubysl', platform: :rbx
+gem 'racc', platform: :rbx
 
 # monkey patching to support dual booting
 module Bundler::SharedHelpers

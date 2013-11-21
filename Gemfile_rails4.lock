@@ -301,6 +301,7 @@ GEM
       rack (>= 1.1, < 2.0)
     qunit-rails (0.0.4)
       railties (>= 3.2.3)
+    racc (1.4.10)
     rack (1.5.2)
     rack-cors (0.2.8)
       rack
@@ -721,6 +722,7 @@ DEPENDENCIES
   pry-rails
   puma
   qunit-rails
+  racc
   rack-cors
   rack-mini-profiler!
   rack-protection
